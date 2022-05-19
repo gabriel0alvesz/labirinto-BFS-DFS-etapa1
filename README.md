@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<img src="imgs/tela.PNG"/> 
+<img src="imgs/menu.PNG"/> 
 </p>
 
 
