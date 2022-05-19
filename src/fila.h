@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-#define MAXTAM 4
+#define MAXTAM 100
 
 typedef struct ItemFila{
 	int val;

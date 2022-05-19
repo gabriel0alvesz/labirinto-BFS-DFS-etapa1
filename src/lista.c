@@ -16,7 +16,8 @@ void LInsert(Lista *l, ItemLista d){
 	if (l->last >= MAXTAM){
 		printf("LISTA CHEIA!\n");
 	}else{
-		l->vetLista[l->last] = d;
+		l->vetLista[l->last].str = malloc(sizeof(100));
+		l->vetLista[l->last].val = d.val;
 		l->last ++;
 	}
 }
@@ -38,15 +39,8 @@ void LRemove(Lista *l, ItemLista d){
 	}
 }
 
-
 void LImprime(Lista *l){
 	for(int i=l->first; i<l->last; i++)
-		printf("%d\t", l->vetLista[i].val);
+		printf("%d ", l->vetLista[i].val);
 	printf("\n");
 }
-
-
-
-
-
-

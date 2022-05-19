@@ -36,7 +36,7 @@ void PRemove(Pilha *p, ItemPilha d){
 	else{
 		while(p->top > p->base){
 			POP(p, &rem);
-			if(rem.val != d.val)
+			if(rem.val_I != d.val_I)
 				PUSH(&aux, rem);
 		}
 
@@ -49,7 +49,7 @@ void PRemove(Pilha *p, ItemPilha d){
 
 void PImprime(Pilha *p){
 	for(int i=p->top-1; i>=p->base; i--)
-		printf("%d\n", p->vet[i].val);
+		printf("%d-%d\n", p->vet[i].val_I, p->vet[i].val_J);
 	printf("\n");
 }
 

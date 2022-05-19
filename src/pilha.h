@@ -5,10 +5,12 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
-#define MAXTAM 4
+#define MAXTAM 100
 
 typedef struct ItemPilha{
 	int val;
+	int val_I;
+	int val_J;
 }ItemPilha;
 
 typedef struct Pilha{

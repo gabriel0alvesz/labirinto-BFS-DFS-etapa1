@@ -4,16 +4,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include<string.h>
 
-#define MAXTAM 4
+#define MAXTAM 100
 
 typedef struct ItemLista{
 	int val;
+	char *str;
 }ItemLista;
 
 typedef struct Lista{
 	ItemLista vetLista[MAXTAM+1];
 	int first;
+	int atual;
 	int last;
 }Lista;
 

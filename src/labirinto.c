@@ -22,21 +22,25 @@ void PUSHLAB(Labirinto *s, Lista l){
 }
 
 void LabirintoImprime(Labirinto *s){
+	if(s->base == s->topo)
+		printf("LABIRINTO VAZIO!\n");
 	for(int j=s->topo-1; j>=s->base; j--) {
         LImprime(&s->vLista[j]);
     }
 	printf("\n");
 }
-/*
 
-void POPLAB(Labirinto *s, ItemLab **d){
+void POPLAB(Labirinto *s, Lista *l){
+	//printf("%d-%d\n", s->base, s->topo);
 	if(s->base == s->topo)
 		printf("LABIRINTO VAZIO!\n");
 	else{
 		s->topo --;
-		*d = s->vetLab[s->topo];
+		*l = s->vLista[s->topo];
+		//*d = s->vetLab[s->topo];
 	}
 }
+/*
 
 void LabirintoRemove(Labirinto *s, ItemLab *d){
 	Labirinto aux;
