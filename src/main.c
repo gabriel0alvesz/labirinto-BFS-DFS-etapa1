@@ -27,7 +27,7 @@ int main() {
 int Menu() {
     int opcao;
 
-    printf("Menu BFS: \n");
+    printf("Menu BFS - DFS: \n");
     printf("1 - BFS - DFS - Entrada 1\n");
     printf("2 - BFS - DFS - Entrada 2\n");
     printf("3 - BFS - DFS - Entrada 3\n");
