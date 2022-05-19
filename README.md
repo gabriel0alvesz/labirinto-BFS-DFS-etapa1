@@ -18,13 +18,7 @@
 
 Makefile realiza o procedimento de compilação e execução.
 
-
-| Comando                |  Função                                                                                           |                     
-| -----------------------| ------------------------------------------------------------------------------------------------- |
-|  `make r`              | Apaga a última compilação realizada contida na pasta build, executa a compilação utilizando gcc e executa o programa da pasta build após a realização da compilação.                |
-
-|comando| Funcao|
+|Comando| Funcao|
 |----|----|
-|`teste`|teste|
-|`teste`|teste|
-|`teste`|teste|
+|`make clean`|Limpa tudo|
+|`make r`|Executa a compilação utilizando gcc e executa o programa da pasta build após a realização da compilação.|
