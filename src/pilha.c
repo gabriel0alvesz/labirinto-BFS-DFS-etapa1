@@ -52,9 +52,3 @@ void PImprime(Pilha *p){
 		printf("%d-%d\n", p->vet[i].val_I, p->vet[i].val_J);
 	printf("\n");
 }
-
-
-
-
-
-

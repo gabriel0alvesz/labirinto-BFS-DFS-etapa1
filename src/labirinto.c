@@ -31,40 +31,10 @@ void LabirintoImprime(Labirinto *s){
 }
 
 void POPLAB(Labirinto *s, Lista *l){
-	//printf("%d-%d\n", s->base, s->topo);
 	if(s->base == s->topo)
 		printf("LABIRINTO VAZIO!\n");
 	else{
 		s->topo --;
 		*l = s->vLista[s->topo];
-		//*d = s->vetLab[s->topo];
 	}
 }
-/*
-
-void LabirintoRemove(Labirinto *s, ItemLab *d){
-	Labirinto aux;
-	ItemLab *rem;
-
-	FLabirintoVazio(&aux);
-
-	if(s->base == s->topo)
-		printf("LABIRINTO VAZIO!\n");
-	else{
-		while(s->topo > s->base){
-			POPLAB(s, &rem);
-			if(rem->val != d->val)
-				PUSHLAB(&aux, rem);
-		}
-
-		while(aux.topo > aux.base){
-			POPLAB(&aux, &rem);
-			PUSHLAB(s, rem);
-		}
-	}
-}
-
-
-*/
-
-

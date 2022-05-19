@@ -9,7 +9,7 @@ int **lerEntrada(int **matriz, int Inteiro){
 		matriz[i] = (int*)malloc(TAMVETOR * sizeof(int));
     
 	char *str = (char*)malloc(100);
-	sprintf(str, "src/entrada%d.txt", Inteiro);
+	sprintf(str, "src/entradas/entrada%d.txt", Inteiro);
 
     FILE *file = fopen(str, "r");
 

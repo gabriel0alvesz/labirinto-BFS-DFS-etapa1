@@ -9,6 +9,8 @@
 
 typedef struct ItemFila{
 	int val;
+	int i_aux;
+	int j_aux;
 }ItemFila;
 
 typedef struct Fila{

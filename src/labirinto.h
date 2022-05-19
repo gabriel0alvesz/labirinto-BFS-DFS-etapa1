@@ -31,8 +31,7 @@ void POPLAB(Labirinto *s, Lista *l);
 int **lerEntrada(int **matriz, int Inteiro);
 void tokenizar(char *str, int **matriz, int contador);
 
-/*
-void LabirintoRemove(Labirinto *s, ItemLab *d);
-*/
+void FazBFS(int op);
+void FazDFS(int op);
 
 #endif

@@ -16,9 +16,9 @@ void Enfileira(Fila *f, ItemFila d){
 }
 
 void Desenfileira(Fila *f, ItemFila *d){
-	if(f->first == f->last)
+	if(f->first == f->last){
 		printf("FILA VAZIA!\n");
-	else{
+	}else{
 		*d = f->vet[f->first - 1];
 		f->first = f->first % MAXTAM + 1;
 	}
@@ -47,7 +47,7 @@ void FImprime(Fila *f){
 	int aux = f->first;
 	
 	while(aux != f->last){
-		printf("%d\t", f->vet[aux-1].val);
+		printf("[%d-%d]\t", f->vet[aux-1].i_aux, f->vet[aux-1].j_aux);
 		aux = aux % MAXTAM + 1;
 	}
 
